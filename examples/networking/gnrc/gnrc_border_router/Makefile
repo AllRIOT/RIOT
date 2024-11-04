@@ -8,7 +8,7 @@ BOARD ?= native
 RIOTBASE ?= $(CURDIR)/../../../..
 
 # Default to using ethos for providing the uplink when not on native
-UPLINK ?= ethos
+UPLINK ?= cdc-ecm
 
 # If enabled will configure a default DNS resolver and propagate it via the
 # RDNSS option to the hosts
