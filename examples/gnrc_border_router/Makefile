@@ -8,7 +8,7 @@ BOARD ?= native
 RIOTBASE ?= $(CURDIR)/../..
 
 # Default to using ethos for providing the uplink when not on native
-UPLINK ?= ethos
+UPLINK ?= cdc-ecm
 
 # Check if the selected Uplink is valid
 ifeq (,$(filter ethos slip cdc-ecm wifi ethernet,$(UPLINK)))
@@ -57,6 +57,7 @@ endif
 ifeq (dhcpv6,$(PREFIX_CONF))
   # include DHCPv6 client for 6LoWPAN border router
   USEMODULE += gnrc_dhcpv6_client_6lbr
+  USEMODULE += dhcpv6_client_ia_na
 else ifeq (uhcp,$(PREFIX_CONF))
   # include UHCP client
   USEMODULE += gnrc_uhcpc
