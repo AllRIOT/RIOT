@@ -18,6 +18,10 @@ USEMODULE += gnrc_ipv6_default
 # Add a routing protocol
 # Additional networking modules that can be dropped if not needed
 USEMODULE += gnrc_icmpv6_echo
+USEMODULE += gnrc_dhcpv6_client
+USEMODULE += gnrc_dhcpv6_client_simple_pd
+USEMODULE += dhcpv6_client_ia_na
+USEMODULE += dhcpv6_client_ia_pd
 USEMODULE += shell_cmd_gnrc_udp
 # Add also the shell, some shell commands
 USEMODULE += shell
