@@ -9,8 +9,14 @@ ifneq (0,$(GNRC_IPV6))
   USEMODULE += gnrc_ipv6_default
   # Additional networking modules that can be dropped if not needed
   USEMODULE += gnrc_icmpv6_echo
+  USEMODULE += gnrc_dhcpv6_client_simple_pd
+  USEMODULE += dhcpv6_client_ia_na
+  USEMODULE += dhcpv6_client_ia_pd
+  USEMODULE += sock_dns              # include DNS client
+  USEMODULE += gnrc_ipv6_nib_dns     # include RDNSS option handling
+  USEMODULE += auto_init_sock_dns
 else
-  ifeq (0,$(USE_LWIP))
-    $(error No network stack selected. Please choose either GNRC or LWIP)
-  endif
+	ifeq (0,$(USE_LWIP))
+	$(error No network stack selected. Please choose either GNRC or LWIP)
+endif
 endif
