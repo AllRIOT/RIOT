@@ -374,6 +374,7 @@ PSEUDOMODULES += fortuna_reseed
 PSEUDOMODULES += riotboot_%
 PSEUDOMODULES += rtt_cmd
 PSEUDOMODULES += saul_adc
+PSEUDOMODULES += saul_bat_voltage
 PSEUDOMODULES += saul_default
 PSEUDOMODULES += saul_gpio
 PSEUDOMODULES += saul_nrf_temperature
@@ -408,6 +409,7 @@ PSEUDOMODULES += servo_timer
 PSEUDOMODULES += servo_saul
 ## @}
 
+PSEUDOMODULES += shell_builtin_cmd_help_json
 PSEUDOMODULES += shell_cmd_app_metadata
 PSEUDOMODULES += shell_cmd_at30tse75x
 PSEUDOMODULES += shell_cmd_benchmark_udp

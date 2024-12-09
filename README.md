@@ -82,6 +82,15 @@ RIOT provides features including, but not limited to:
 * UWB
 * Bluetooth (BLE) via [NimBLE](https://github.com/apache/mynewt-nimble)
 
+### Related Projects
+
+- [Ariel OS](https://github.com/ariel-os/ariel-os) is an offspring of RIOT written
+in Rust following RIOT's goals and [vision](https://doc.riot-os.org/vision.html).
+- [Contiki(-NG)](https://github.com/contiki-ng/contiki-ng) was an inspiration for starting RIOT, an operating system for constrained devices with a focus on networking.
+- [NuttX](https://github.com/apache/nuttx) is another general purpose microcontroller OS with a focus on bringing POSIX to MCUs
+- [RT-Thread](https://github.com/RT-Thread/rt-thread) is a microcontroller operating system with strong roots in China and a large community there, it has extensive support for MCUs from Chinese vendors, but also for western ones.
+- [Zephyr](https://github.com/zephyrproject-rtos/zephyr) is a general-purpose operating system for microcontrollers, shepherded by the Linux foundation.
+
 ## Getting RIOT
 
 The most convenient way to get RIOT is to clone it via Git
@@ -123,12 +132,27 @@ Using Windows? Use [this guide][dev-setup-windows] to
 
 [dev-setup-windows]: doc/guides/setup-windows
 
-## Forum
-Do you have a question, want to discuss a new feature, or just want to present
-your latest project using RIOT? Come over to our [forum] and post to your hearts
-content.
+## Community
 
-[forum]: https://forum.riot-os.org
+You can ask for help on the Forum or on Matrix. Please send bug reports and
+feature requests to our [GitHub issue tracker](https://github.com/RIOT-OS/RIOT/issues)
+
+- [forum](https://forum.riot-os.org) is the default place to start asking for
+help. Our Forum provides an archive of prior questions and answers.
+- For chat, we use
+  [#riot-os:matrix.org](https://matrix.to/#/#riot-os:matrix.org) on the
+  [Matrix](https://matrix.org/) chat network.
+- [GitHub Issue tracker](https://github.com/RIOT-OS/RIOT/issues) for issues
+with the code and documentation.
+
+### How to Ask
+
+Please include as much detail as you can that is relevant to your question, not
+only "this isn't working". These details include:
+
+1. What you want to achieve.
+2. What have you tried so far (for example the commands you typed).
+3. What happened so far.
 
 ## Contribute
 
