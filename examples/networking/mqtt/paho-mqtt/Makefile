@@ -62,3 +62,6 @@ ifneq (,$(filter arch_esp,$(FEATURES_USED)))
   CFLAGS += -DWIFI_SSID=\"$(WIFI_SSID)\"
   CFLAGS += -DWIFI_PASS=\"$(WIFI_PASS)\"
 endif
+
+# Set a custom channel if needed
+include $(RIOTMAKE)/default-radio-settings.inc.mk
