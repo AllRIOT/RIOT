@@ -23,6 +23,9 @@ USEMODULE += ps
 USEMODULE += gnrc_icmpv6_echo
 # Optimize network stack to for use with a single network interface
 USEMODULE += gnrc_netif_single
+USEMODULE += sock_dns              # include DNS client
+USEMODULE += gnrc_ipv6_nib_dns     # include RDNSS option handling
+USEMODULE += auto_init_sock_dns
 
 # Allow for env-var-based override of the nodes name (EMCUTE_ID)
 ifneq (,$(EMCUTE_ID))

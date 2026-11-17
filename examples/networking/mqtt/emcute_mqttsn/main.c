@@ -27,6 +27,7 @@
 #include "msg.h"
 #include "net/emcute.h"
 #include "net/ipv6/addr.h"
+#include "net/utils.h"
 #include "thread.h"
 
 #ifndef EMCUTE_ID
@@ -86,7 +87,8 @@ static int cmd_con(int argc, char **argv)
     }
 
     /* parse address */
-    if (ipv6_addr_from_str((ipv6_addr_t *)&gw.addr.ipv6, argv[1]) == NULL) {
+    int res = netutils_get_ipv6((ipv6_addr_t *)&gw.addr.ipv6, (netif_t **)NULL, argv[1]);
+    if (res) {
         printf("error parsing IPv6 address\n");
         return 1;
     }
